@@ -4,7 +4,7 @@
 
 ## Installation
 
-  1. Download anaconda ompatible with your system at https://www.continuum.io/downloads:
+  1. Download anaconda compatible with your system at https://www.continuum.io/downloads:
 
     ```
     bash ~/Downloads/Anaconda3-4.3.1-Linux-x86_64.sh
