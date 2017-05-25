@@ -18,6 +18,7 @@
     source activate <environmentname>
     conda install panda
     conda install matplotlib
+    conda install scikit-learn
     ```
 
   3. Anaconda by default will setup environment inside ~/anaconda2/envs. Configure your IDE to use it.
