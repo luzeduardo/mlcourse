@@ -30,6 +30,14 @@ X[:, 0] = label_encoder_x.fit_transform(X[:, 0])
 #specify with collumn I will use to create category based on label, used collumn 0 that is country
 onehotencoder = OneHotEncoder(categorical_features=[0])
 X = onehotencoder.fit_transform(X).toarray()
+y = label_encoder_x.fit_transform(y)
 
+# print X
+# print y
+
+#splitting the dataset into the training set and the data set
+from sklearn.model_selection import train_test_split
+#defining 20% of data to test dataset
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
 print X
