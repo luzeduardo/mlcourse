@@ -2,6 +2,7 @@
 
 # Importing the libraries
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Importing the dataset
 dataset = pd.read_csv('Salary_Data.csv')
@@ -26,5 +27,21 @@ regressor = LinearRegression()
 regressor.fit(X_train, y_train)
 y_pred = regressor.predict(X_test)
 
+
+#visualising the training set
+# plt.scatter(X_train, y_train, color='red')
+# plt.plot(X_train, regressor.predict(X_train), color='blue')
+# plt.title('Salary vs Experience (Training set)')
+# plt.xlabel('Years')
+# plt.ylabel('Salary')
+# plt.show()
+
+#visualising the test set
+plt.scatter(X_test, y_test, color='black')
+plt.plot(X_train, regressor.predict(X_train), color='yellow')
+plt.title('Salary vs Experience (Training set)')
+plt.xlabel('Years')
+plt.ylabel('Salary')
+plt.show()
 
 stop = 1
